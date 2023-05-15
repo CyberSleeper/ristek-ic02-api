@@ -1,0 +1,155 @@
+openapi: 3.0.1
+info:
+  title: defaultTitle
+  description: defaultDescription
+  version: '0.1'
+servers:
+  - url: http://localhost:3000
+paths:
+  /expense:
+    get:
+      description: Auto generated using Swagger Inspector
+      parameters:
+        - name: max_price
+          in: query
+          allowEmptyValue: true
+          schema:
+            type: string
+        - name: category_id
+          in: query
+          allowEmptyValue: true
+          schema:
+            type: string
+        - name: min_price
+          in: query
+          allowEmptyValue: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: http://localhost:3000
+    post:
+      description: Auto generated using Swagger Inspector
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                amount:
+                  type: integer
+                name:
+                  type: string
+                category:
+                  type: string
+            examples:
+              '0':
+                value: "{\r\n  \"amount\": 20000,\r\n  \"category\": \"fa8337a7-a4b7-4257-a322-9d51473d9fc4\",\r\n  \"name\": \"Personal Expenses\"\r\n}"
+      responses:
+        '201':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: http://localhost:3000
+    servers:
+      - url: http://localhost:3000
+  /expense/:id:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: http://localhost:3000
+    delete:
+      description: Auto generated using Swagger Inspector
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: http://localhost:3000
+    put:
+      description: Auto generated using Swagger Inspector
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                amount:
+                  type: integer
+                name:
+                  type: string
+                category:
+                  type: string
+            examples:
+              '0':
+                value: |-
+                  {
+                    "amount": 2,
+                    "category": "0c1dab86-8538-498f-af58-17b54de01d3d",
+                    "name": "Pers Expenses"
+                  }
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: http://localhost:3000
+    servers:
+      - url: http://localhost:3000
+  /expense/category:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: http://localhost:3000
+    servers:
+      - url: http://localhost:3000
+  /expense/total:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: http://localhost:3000
+    servers:
+      - url: http://localhost:3000
