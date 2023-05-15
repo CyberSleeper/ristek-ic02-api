@@ -1,3 +1,3 @@
-# ristek-ic02-crud
+# ristek-ic02-api
 
-This is a basic CRUD app using Typescript with Express.js
+This is a basic api using Typescript with Express.js and Swagger documentation
